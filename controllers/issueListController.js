@@ -1,4 +1,5 @@
-app.controller('issueListController', function ($scope) {
+app.controller('issueListController', function ($scope,$route) {
+    $scope.issueList = JSON.parse(window.localStorage.getItem('issues'))
     $scope.authorModel = [];
     $scope.authorData = [{
         id: 1,
@@ -72,20 +73,9 @@ app.controller('issueListController', function ($scope) {
             }
         }
     }
+    $scope.gotoIssueDetails = function(data){
+        window.location = '#!/issuedetail/' + data
+    }
 })
 
 
-// {
-//     issueNumber:'',
-//     issueName:'',
-//     author:'',
-//     label:'',
-//     projectversion:'',
-//     milestones:'',
-//     assignedTo:'',
-//     sortBy:'',
-//     status:'',
-//     comments:[],
-//     description:'',
-//     modifiedDateTime:''
-// }

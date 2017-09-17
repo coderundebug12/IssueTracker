@@ -29,11 +29,11 @@
         <div ng-dropdown-multiselect="" options="sortData" selected-model="sortModel" extra-settings="buttonSettings" translation-texts="tranlationTexts.Sort" events="dropdownevents.Sort">></div>
       </span>  
     </div>
-    <div class="issuelist" ng-repeat="i in [1,2,3,4,5]">
+    <div class="issuelist" ng-repeat="issue in issueList">
       <span class="fa fa-exclamation-circle openissue"></span>
       <div class="issulelisttext">
-        <div>Long Text</div>
-        <small>{{i}}</small>
+        <div style="font-size:18px;" ng-click="gotoIssueDetails(issue.issueNumber)">{{issue.issueName}}</div>
+        <small>#{{issue.issueNumber}} opened {{issue.modifiedDateTime | date : 'h'}} hours ago by {{issue.author}} </small>
       </div>
     </div>
 </div>

@@ -12,6 +12,8 @@ app.config(function ($routeProvider) {
         })
         .when("/milestones", {
             templateUrl: "templates/milestones.html"
+        }).when("/issuedetail/:id", {
+            templateUrl: "templates/issueDetail.html"
         });
 });
-    
+        
