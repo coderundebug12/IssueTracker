@@ -1,0 +1,470 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(255,255,255,0.75);
+    background-color: #24292e;
+    display: flex !important;
+    align-items: center;
+    padding-left: 120px;
+    font-size: 14px;
+}
+
+.git-icon{
+    font-size: 35px !important;
+    color:white;
+}
+
+.white-font{
+    color: white;
+}
+
+
+.pr-10{
+    padding-right: 10px;
+}
+
+.pl-10{
+    padding-left: 10px;
+}
+
+.repo_nav{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 14px;
+    padding: 7px;
+    color: rgba(255,255,255,0.75);
+    background-color: #3f4448;
+    cursor: pointer;
+}
+
+.repo_nav:hover{
+    background-color: #565b5e;
+}
+
+.search-box{
+    border: none;
+    outline: none;
+    padding: 7px;
+    border-left: 1px solid #24292e;
+    background-color: #3f4448;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color:white;
+    font-size: 14px;
+    width: 200px;
+}
+
+.links{
+    font-size: 14px;
+    padding-right:10px;
+    font-weight: 700;
+}
+
+
+.links:hover{
+    color: white;
+    cursor: pointer;
+
+}
+
+.link_wrapper{
+    padding-left: 10px;
+}
+
+.dropdownbtn{
+    border:none;
+    background-color:#f6f8fa;
+    box-shadow: none !important;
+}
+.settings{
+    position: absolute;
+    right: 120px;
+}
+
+.profile_icon{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.btm-line{
+    border-bottom:1px solid #d3d3d3;
+}
+
+.cancel-hover:hover{
+    background-color: white;
+}
+
+.signout{
+    background-color: #24292e;
+    border: none;
+}
+
+.username{
+    color: #586069;
+}
+
+[ng-cloak] {
+    display:none;
+}
+
+.sprite{
+    background-image: url('../images/oticonsprite.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.infowrapper{
+    background-color: #fafbfc
+}
+
+.repo{
+    background-position: -3227px 3px;
+    width: 12px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.branchinfo{
+    color: rgb(3, 102, 214);
+    font-size: 18px;
+    padding-right: 160px;
+}
+
+.branchinfo a {
+    color: rgb(3, 102, 214);
+    text-decoration: none;
+}
+
+.branchinfo a:hover {
+    text-decoration: underline;
+}
+
+.row1{
+    padding-top:20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eye{
+    background-position: -1139px -2px;
+    width: 20px;
+    height: 14px;
+    
+}
+
+.fork{
+    background-position: -3159px -1px;
+    width: 15px;
+    height: 14px;
+}
+
+.header-btn{
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 3px;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    background: white;
+}
+
+.btncustom{
+    padding: 6px;
+    display: inline-block;
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    border-right: 1px solid;
+    border-left-color: rgba(27, 31, 35, 0.2);
+    border-right-color: rgba(27, 31, 35, 0.2);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btncustom:hover{
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+    border-color: rgba(27,31,35,0.35);
+}
+
+.whitebg{
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.whitebg:hover{
+    color: #0366d6;
+    cursor: pointer;
+}
+
+.row2{
+    padding-left: 130px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.row2 button{
+    border:none;
+    outline: none;
+    font-size: 14px;
+    color: #586069;
+    border: none;
+    background-color: #fafbfc;
+}
+
+.code{
+    background-position: -682px 0px;
+    width: 15px;
+    height: 18px;
+}
+
+.issues{
+    background-position: -1923px 0;
+    width: 15px;
+    height: 18px;
+}
+
+.pullrequest{
+    background-position: -1643px 0; 
+    width: 16px;
+    height: 18px;
+}
+
+.projects{
+    background-position: -2964px 0; 
+    width: 18px;
+    height: 18px;
+}
+
+.notificatioins{
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #586069;
+    background-color: rgba(27,31,35,0.08);
+    border-radius: 20px;
+}
+
+.active_mine{
+    background-color: white !important;
+    padding: 10px !important;
+    border: 1px solid !important;
+    border-top: 3px solid !important;
+    border-color: #E36209 #e1e4e8 transparent !important;
+    margin-bottom:-1px;
+}
+
+.viewcontainer{
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+.issueswrapper{
+    padding-top: 15px;
+}
+
+.filter{
+    background-color: #e9ecef !important;
+    color:#444d56 !important;
+    border:1px solid rgba(27, 31, 35, 0.2) !important;
+}
+
+.searchissues{
+    background-color: #fafbfc;
+    border: 1px solid rgb(209, 213, 218);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 15px;
+    position: relative;
+    left: -7px;
+    height: 34px;
+    vertical-align: middle;
+}
+
+.searchissues:focus{
+    background-color: white;
+}
+
+.milestonebtn{
+    color: #444d56;
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    padding: 8px;
+    vertical-align: middle;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.labelbtn{
+    color: #444d56;
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    padding: 8px;
+    vertical-align: middle;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.labelbtn:hover{
+    background-color: #f6f8fa;
+}
+
+.cancelstyles{
+    color: white;
+    text-decoration: none;
+}
+
+.cancelstyles:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.issue_table{
+    margin-top: 20px;
+    background-color: #f6f8fa;
+    border:1px solid #e1e4e8;
+    border-radius:3px 3px 0 0;
+    padding: 15px;
+    color: #444d56;
+    font-size: 15px;
+}
+.issue_table  a {
+    text-decoration: none;
+    color: #444d56;
+} 
+
+.issue_table a:hover {
+    text-decoration: none;
+    color: #444d56;
+}
+
+.issue_table a:focus {
+    text-decoration: none;
+    color: #444d56;
+} 
+
+.tick{
+    background-position: -410px 0;
+    width: 15px;
+    height: 15px;
+}
+
+.pr-15{
+    padding-right: 15px;
+}
+
+.issuelist{
+    border: 1px solid #e1e4e8;
+    border-top-color: white;
+    padding: 15px;
+}
+
+.issuelist:hover{
+    background-color: #f6f8fa;
+}
+
+.openissue{
+    color: green;
+}
+
+.issulelisttext{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left:10px; 
+}
+
+.issulelisttext > div:hover {
+    color: #0366d6;
+    cursor: pointer;
+}
+
+.inline_child > div {
+    display: inline-block;
+}
+
+.newissuesform{
+    padding: 10px 200px 10px 70px;
+}
+
+.newissuesform > div {
+    overflow: hidden;
+    padding:10px;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+}
+
+.submitissuebtn{
+    margin-top:5px;
+    color: #fff;
+    background-color: #5cb85c;
+    background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%) !important;
+}
+
+.mb-5{
+    margin-bottom:5px;
+}
+
+.markdown{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: rgb(88, 96, 105);
+    display: inline-block;
+}
+
+.markdown:hover{
+    color: rgb(3, 102, 214);
+    cursor: pointer;
+}
+
+.markdownicon{
+    background-position: -2465px 0;
+    width: 20px;
+    height: 17px;
+}
+
+.newissuesform:before{
+    border-width: 8px;
+    border-right-color: #d1d5da;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    content: " ";
+    border-color: transparent;
+    border-style: solid solid outset;
+}
+
+.previewWrapper{
+    padding: 10px;
+    min-height: 300px;
+    border-bottom: 1px solid #d1d5da;
+}
+
+
+
+
+
+
+
+
+

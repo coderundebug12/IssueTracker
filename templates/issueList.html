@@ -1,0 +1,39 @@
+<div class="issueswrapper" ng-controller="issueListController">
+    <div class="btnrow">
+      <div class="btn-group" uib-dropdown is-open="status.isopen">
+        <button id="single-button" type="button" class="btn btn-primary filter" uib-dropdown-toggle ng-disabled="disabled">
+            Filters <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+            <li role="menuitem" ng-repeat="i in [1,2,3,4,5,6]">
+                <a href="#">Action</a>
+            </li>
+        </ul>
+    </div>
+    <input class="searchissues">
+    <span>
+      <span class="labelbtn">Labels</span>
+      <span class="labelbtn">Milestone</span>
+    </span>
+    <a class="pull-right btn btn-success cancelstyles" href="/#!/newissues">New Issue</a>
+    </div>
+    <div class="issue_table">
+      <a href="#" ng-click="filter('Open')"><i class="sprite issues"></i> 290 Open  </a>
+      <a href="#" ng-click="filter('Closed')"><i class="fa fa-check"></i> 15,234 Closed</a>
+      <span class="inline_child pull-right">
+        <div ng-dropdown-multiselect="" options="authorData" selected-model="authorModel" extra-settings="buttonSettings" translation-texts="tranlationTexts.Author" events="dropdownevents.Author"></div>
+        <div ng-dropdown-multiselect="" options="LabelData" selected-model="LabelModel" extra-settings="buttonSettings" translation-texts="tranlationTexts.Label" events="dropdownevents.Label">></div>
+        <div ng-dropdown-multiselect="" options="projectsData" selected-model="proectModel" extra-settings="buttonSettings" translation-texts="tranlationTexts.Projects" events="dropdownevents.Projects">></div>
+        <div ng-dropdown-multiselect="" options="milestonesData" selected-model="milestonesModel" extra-settings="buttonSettings" translation-texts="tranlationTexts.Milestones" events="dropdownevents.Milestones"></div>
+        <div ng-dropdown-multiselect="" options="assigneeData" selected-model="assigneeModel" extra-settings="buttonSettings" translation-texts="tranlationTexts.Assignee" events="dropdownevents.Assignee">></div>
+        <div ng-dropdown-multiselect="" options="sortData" selected-model="sortModel" extra-settings="buttonSettings" translation-texts="tranlationTexts.Sort" events="dropdownevents.Sort">></div>
+      </span>  
+    </div>
+    <div class="issuelist" ng-repeat="i in [1,2,3,4,5]">
+      <span class="fa fa-exclamation-circle openissue"></span>
+      <div class="issulelisttext">
+        <div>Long Text</div>
+        <small>{{i}}</small>
+      </div>
+    </div>
+</div>

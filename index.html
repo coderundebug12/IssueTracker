@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body ng-app="issuetracker" ng-cloak>
+    <header>
+        <i class="fa fa-github git-icon pr-10" aria-hidden="true"></i>
+        <a class="repo_nav cancelstyles">This repository</a>
+        <input type="text" placeholder="Search" class="search-box">
+        <div class="link_wrapper">
+            <span class="links">Pull Request</span>
+            <span class="links">Issues</span>
+            <span class="links">Marketplace</span>
+            <span class="links">Explore</span>
+        </div>
+        <div class="settings">
+            <span class="btn-group" uib-dropdown>
+            <button id="settings" type="button" class="signout" uib-dropdown-toggle ng-disabled="disabled">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="settings">
+                <li role="menuitem" ng-repeat="i in ['New Repository','Import Repository','New Gist','New Organization','This Repository','New Issue']">
+                    <a href="#">{{i}}</a>
+                </li>
+            </ul>
+            </span>
+            <span class="btn-group" uib-dropdown>
+            <button id="logout" type="button" class="signout" uib-dropdown-toggle ng-disabled="disabled">
+            <img class="profile_icon" src="images/profileicon.png">
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="logout">
+                <li role="menuitem" ng-repeat="i in ['Your Profile','Your Stats','Your Gists','Help','Settings','Sign Out']">
+                    <a href="#">{{i}}</a>
+                </li>
+            </ul>
+            </span>
+        </div>
+    </header>
+    <div class="infowrapper">
+        <div class="row1">
+            <div class="branchinfo"><i class="sprite repo"></i><a href="#">main</a> / <a href="#">issuetracker</a></div>
+            <div class="buttoncontainer">
+                <div class="header-btn">
+                    <span class="btncustom"><i class="sprite eye"></i>Watch <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <span class="whitebg">78,653</span>
+                </div>
+
+                <div class="header-btn">
+                    <span class="btncustom"><i class="fa fa-star"></i> Star <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <span class="whitebg">9000</span>
+                </div>
+
+                <div class="header-btn">
+                    <span class="btncustom"><i class="sprite fork"></i>Watch <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <span class="whitebg">78</span>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <button><span class="sprite code"></span> Code </button>
+            <button class="active_mine"> <span class="sprite issues"></span> Issues <span class="notificatioins">232</span></button>
+            <button>  <span class="sprite pullrequest"></span>Pull Request <span class="notificatioins">23</span></button>
+            <button> <span class="sprite projects"></span>Projects <span class="notificatioins">45</span></button>
+            <button> Insights <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <div class="viewcontainer" ng-view></div>
+
+    <!--Libraries-->
+
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/tinymce/tinymce.min.js"></script>
+    <script src="libs/ui-tinymce.min.js"></script>
+    <script src="libs/angular-route.js"></script>
+    <script src="libs/ui-bootstrap.min.js"></script>
+    <script src="libs/angularjs-dropdown-multiselect.min.js"></script>
+    <script src="libs/angular-sanitize.js"></script>
+    <script src="libs/idb.js"></script>
+    <script src="main.js"></script>
+    <script src="idbservice.js"></script>
+    <!--Controllers-->
+    
+    <script src="controllers/newIssuesController.js"></script>
+    <script src="controllers/issueListController.js"></script>
+    <script src="controllers/labelController.js"></script>
+</body>
+
+</html>

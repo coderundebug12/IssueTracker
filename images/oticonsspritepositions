@@ -1,0 +1,148 @@
+.sprite { background: url('sprite.png') no-repeat top left; width: 14px; height: 16px;  } 
+.sprite.alert { background-position: 0 0; width: 16px; } 
+.sprite.arrow-down { background-position: -26px 0; width: 10px; } 
+.sprite.arrow-left { background-position: -46px 0; width: 10px; } 
+.sprite.arrow-right { background-position: -66px 0; width: 10px; } 
+.sprite.arrow-small-down { background-position: -86px 0; width: 6px; } 
+.sprite.arrow-small-left { background-position: -102px 0; width: 6px; } 
+.sprite.arrow-small-right { background-position: -118px 0; width: 6px; } 
+.sprite.arrow-small-up { background-position: -134px 0; width: 6px; } 
+.sprite.arrow-up { background-position: -150px 0; width: 10px; } 
+.sprite.beaker { background-position: -170px 0; width: 16px; } 
+.sprite.bell { background-position: -196px 0; } 
+.sprite.bold { background-position: -220px 0; width: 10px; } 
+.sprite.book { background-position: -240px 0; width: 16px; } 
+.sprite.bookmark { background-position: -266px 0; width: 10px; } 
+.sprite.briefcase { background-position: -286px 0; } 
+.sprite.broadcast { background-position: -310px 0; width: 16px; } 
+.sprite.browser { background-position: -336px 0; } 
+.sprite.bug { background-position: -360px 0; width: 16px; } 
+.sprite.calendar { background-position: -386px 0; } 
+.sprite.check { background-position: -410px 0; width: 12px; } 
+.sprite.checklist { background-position: -432px 0; width: 16px; } 
+.sprite.chevron-down { background-position: -458px 0; width: 10px; } 
+.sprite.chevron-left { background-position: -478px 0; width: 8px; } 
+.sprite.chevron-right { background-position: -496px 0; width: 8px; } 
+.sprite.chevron-up { background-position: -514px 0; width: 10px; } 
+.sprite.circle-slash { background-position: -534px 0; } 
+.sprite.circuit-board { background-position: -558px 0; } 
+.sprite.clippy { background-position: -582px 0; } 
+.sprite.clock { background-position: -606px 0; } 
+.sprite.cloud-download { background-position: -630px 0; width: 16px; } 
+.sprite.cloud-upload { background-position: -656px 0; width: 16px; } 
+.sprite.code { background-position: -682px 0; } 
+.sprite.comment-discussion { background-position: -706px 0; width: 16px; } 
+.sprite.comment { background-position: -732px 0; width: 16px; } 
+.sprite.credit-card { background-position: -758px 0; width: 16px; } 
+.sprite.dash { background-position: -784px 0; width: 8px; } 
+.sprite.dashboard { background-position: -802px 0; width: 16px; } 
+.sprite.database { background-position: -828px 0; width: 12px; } 
+.sprite.desktop-download { background-position: -850px 0; width: 16px; } 
+.sprite.device-camera-video { background-position: -876px 0; width: 16px; } 
+.sprite.device-camera { background-position: -902px 0; width: 16px; } 
+.sprite.device-desktop { background-position: -928px 0; width: 16px; } 
+.sprite.device-mobile { background-position: -954px 0; width: 10px; } 
+.sprite.diff-added { background-position: -974px 0; } 
+.sprite.diff-ignored { background-position: -998px 0; } 
+.sprite.diff-modified { background-position: -1022px 0; } 
+.sprite.diff-removed { background-position: -1046px 0; } 
+.sprite.diff-renamed { background-position: -1070px 0; } 
+.sprite.diff { background-position: -1094px 0; width: 13px; } 
+.sprite.ellipsis { background-position: -1117px 0; width: 12px; } 
+.sprite.eye { background-position: -1139px 0; width: 16px; } 
+.sprite.file-binary { background-position: -1165px 0; width: 12px; } 
+.sprite.file-code { background-position: -1187px 0; width: 12px; } 
+.sprite.file-directory { background-position: -1209px 0; } 
+.sprite.file-media { background-position: -1233px 0; width: 12px; } 
+.sprite.file-pdf { background-position: -1255px 0; width: 12px; } 
+.sprite.file-submodule { background-position: -1277px 0; } 
+.sprite.file-symlink-directory { background-position: -1301px 0; } 
+.sprite.file-symlink-file { background-position: -1325px 0; width: 12px; } 
+.sprite.file-text { background-position: -1347px 0; width: 12px; } 
+.sprite.file-zip { background-position: -1369px 0; width: 12px; } 
+.sprite.file { background-position: -1391px 0; width: 12px; } 
+.sprite.flame { background-position: -1413px 0; width: 12px; } 
+.sprite.fold { background-position: -1435px 0; } 
+.sprite.gear { background-position: -1459px 0; } 
+.sprite.gift { background-position: -1483px 0; } 
+.sprite.gist-secret { background-position: -1507px 0; } 
+.sprite.gist { background-position: -1531px 0; width: 12px; } 
+.sprite.git-branch { background-position: -1553px 0; width: 10px; } 
+.sprite.git-commit { background-position: -1573px 0; } 
+.sprite.git-compare { background-position: -1597px 0; } 
+.sprite.git-merge { background-position: -1621px 0; width: 12px; } 
+.sprite.git-pull-request { background-position: -1643px 0; width: 12px; } 
+.sprite.globe { background-position: -1665px 0; } 
+.sprite.grabber { background-position: -1689px 0; width: 8px; } 
+.sprite.graph { background-position: -1707px 0; width: 16px; } 
+.sprite.heart { background-position: -1733px 0; width: 12px; } 
+.sprite.history { background-position: -1755px 0; } 
+.sprite.home { background-position: -1779px 0; width: 16px; } 
+.sprite.horizontal-rule { background-position: -1805px 0; width: 10px; } 
+.sprite.hubot { background-position: -1825px 0; } 
+.sprite.inbox { background-position: -1849px 0; } 
+.sprite.info { background-position: -1873px 0; } 
+.sprite.issue-closed { background-position: -1897px 0; width: 16px; } 
+.sprite.issue-opened { background-position: -1923px 0; } 
+.sprite.issue-reopened { background-position: -1947px 0; } 
+.sprite.italic { background-position: -1971px 0; width: 6px; } 
+.sprite.jersey { background-position: -1987px 0; } 
+.sprite.kebab-horizontal { background-position: -2011px 0; width: 13px; } 
+.sprite.kebab-vertical { background-position: -2034px 0; width: 3px; } 
+.sprite.key { background-position: -2047px 0; } 
+.sprite.keyboard { background-position: -2071px 0; width: 16px; } 
+.sprite.law { background-position: -2097px 0; } 
+.sprite.light-bulb { background-position: -2121px 0; width: 12px; } 
+.sprite.link-external { background-position: -2143px 0; width: 12px; } 
+.sprite.link { background-position: -2165px 0; width: 16px; } 
+.sprite.list-ordered { background-position: -2191px 0; width: 12px; } 
+.sprite.list-unordered { background-position: -2213px 0; width: 12px; } 
+.sprite.location { background-position: -2235px 0; width: 12px; } 
+.sprite.lock { background-position: -2257px 0; width: 12px; } 
+.sprite.logo-gist { background-position: -2279px 0; width: 25px; } 
+.sprite.logo-github { background-position: -2314px 0; width: 45px; } 
+.sprite.mail-read { background-position: -2369px 0; } 
+.sprite.mail-reply { background-position: -2393px 0; width: 12px; } 
+.sprite.mail { background-position: -2415px 0; } 
+.sprite.mark-github { background-position: -2439px 0; width: 16px; } 
+.sprite.markdown { background-position: -2465px 0; width: 16px; } 
+.sprite.megaphone { background-position: -2491px 0; width: 16px; } 
+.sprite.mention { background-position: -2517px 0; } 
+.sprite.milestone { background-position: -2541px 0; } 
+.sprite.mirror { background-position: -2565px 0; width: 16px; } 
+.sprite.mortar-board { background-position: -2591px 0; width: 16px; } 
+.sprite.mute { background-position: -2617px 0; width: 16px; } 
+.sprite.no-newline { background-position: -2643px 0; width: 16px; } 
+.sprite.note { background-position: -2669px 0; } 
+.sprite.octoface { background-position: -2693px 0; width: 16px; } 
+.sprite.organization { background-position: -2719px 0; width: 16px; } 
+.sprite.package { background-position: -2745px 0; width: 16px; } 
+.sprite.paintcan { background-position: -2771px 0; width: 12px; } 
+.sprite.pencil { background-position: -2793px 0; } 
+.sprite.person { background-position: -2817px 0; width: 12px; } 
+.sprite.pin { background-position: -2839px 0; width: 16px; } 
+.sprite.plug { background-position: -2865px 0; } 
+.sprite.plus-small { background-position: -2889px 0; width: 7px; } 
+.sprite.plus { background-position: -2906px 0; width: 12px; } 
+.sprite.primitive-dot { background-position: -2928px 0; width: 8px; } 
+.sprite.primitive-square { background-position: -2946px 0; width: 8px; } 
+.sprite.project { background-position: -2964px 0; width: 15px; } 
+.sprite.pulse { background-position: -2989px 0; } 
+.sprite.question { background-position: -3013px 0; } 
+.sprite.quote { background-position: -3037px 0; } 
+.sprite.radio-tower { background-position: -3061px 0; width: 16px; } 
+.sprite.reply { background-position: -3087px 0; } 
+.sprite.repo-clone { background-position: -3111px 0; width: 16px; } 
+.sprite.repo-force-push { background-position: -3137px 0; width: 12px; } 
+.sprite.repo-forked { background-position: -3159px 0; width: 10px; } 
+.sprite.repo-pull { background-position: -3179px 0; width: 16px; } 
+.sprite.repo-push { background-position: -3205px 0; width: 12px; } 
+.sprite.repo { background-position: -3227px 0; width: 12px; } 
+.sprite.rocket { background-position: -3249px 0; width: 16px; } 
+.sprite.rss { background-position: -3275px 0; width: 10px; } 
+.sprite.ruby { background-position: -3295px 0; width: 16px; } 
+.sprite.screen-full { background-position: -3321px 0; } 
+.sprite.screen-normal { background-position: -3345px 0; } 
+.sprite.search { background-position: -3369px 0; width: 16px; } 
+.sprite.server { background-position: -3395px 0; width: 12px; } 
+.sprite.settings { background-position: -3417px 0; width: 16px; } 
