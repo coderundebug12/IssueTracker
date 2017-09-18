@@ -1,3 +1,44 @@
-<div ng-controller="issueDetailController">
-    {{currentIssue}}
+<div class="issuedetail" ng-controller="issueDetailController">
+   <div>
+       <span class="issuetitle">{{currentIssue.issueName}} <span> #{{currentIssue.issueNumber}} </span>
+       <a class="pull-right btn btn-success cancelstyles" href="/#!/newissues">New Issue</a>
+   </div>
+   <button class="statusbutton"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> {{currentIssue.status}}</button>
+   <bold>
+       <span class="author">{{currentIssue.author}}</span> 
+       opened this issue 
+       <span>{{currentIssue.modifiedDateTime | date:'h'}}</span> 
+       hours ago • {{currentIssue.comments.length}} comment
+    </bold>
+    <hr>
+    <div>
+        <div class="pull-left authoricon"></div>
+        <div class="comments">
+            <div class="commentheader">
+                <bold><span class="author">{{currentIssue.author}}</span> commented {{currentIssue.modifiedDateTime | date:'h'}} hours ago</bold>
+            </div>
+            <div class="commentbody">Body •</div>
+        </div>
+        <div class="line"></div>
+        <form name="form" class="commentform" ng-submit="submit(form)" novalidate>
+        <div>
+            <uib-tabset active="active">
+                <uib-tab>
+                    <uib-tab-heading>
+                        Write
+                    </uib-tab-heading>
+                    <textarea ui-tinymce="tinymceOptions" id="tinymce" ng-model="description"></textarea>
+                </uib-tab>
+                <uib-tab>
+                    <uib-tab-heading>
+                        Preview
+                    </uib-tab-heading>
+                    <div class="previewWrapper" ng-bind-html="description"> </div>
+                </uib-tab>
+            </uib-tabset>
+            <span class="markdown"><span class="sprite markdownicon"></span>Styling with Markdown is supported</span>
+            <button type="submit" class="btn btn-success submitissuebtn pull-right" ng-disabled="form.$invalid">Submit new issue</button>
+        </div>
+    </form>
+    </div>
 </div>

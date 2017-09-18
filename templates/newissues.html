@@ -2,7 +2,7 @@
     <div class="alert alert-warning">
         Before you open an issue please review the <a href="#">contributing</a> guidelines for this repository.
     </div>
-    <form name="form" class="newissuesform" ng-submit="submit(form)" novalidate>
+    <form name="form" class="commentform" ng-submit="submit(form)" novalidate>
         <div>
             <input name="title" class="form-control mb-5" placeholder="Title" ng-model="title" ng-required="true">
             <uib-tabset active="active">
@@ -10,7 +10,7 @@
                     <uib-tab-heading>
                         Write
                     </uib-tab-heading>
-                    <textarea ui-tinymce="tinymceOptions" ng-model="description"></textarea>
+                    <textarea ui-tinymce="tinymceOptions" id="tinymce" ng-model="description"></textarea>
                 </uib-tab>
                 <uib-tab>
                     <uib-tab-heading>

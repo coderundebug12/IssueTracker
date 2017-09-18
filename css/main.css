@@ -460,6 +460,99 @@ header{
     border-bottom: 1px solid #d1d5da;
 }
 
+.issuedetail{
+    padding: 10px;
+}
+
+.issuedetail > div{
+    padding-top:20px;
+}
+
+.issuetitle{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.issuetitle > span{
+    color: grey;
+}
+
+.statusbutton{
+    border: none;
+    background: #5cb85c;
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    height: 30px;
+}
+
+.author{
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+}
+
+bold{
+    color:lightslategray;
+}
+
+.comments{
+    padding-left: 70px;
+    width: 70%;
+    
+}
+
+.authoricon{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+}
+
+.commentheader{ 
+    border: 1px solid #d1d5da;
+    padding:10px;
+    background-color:#f6f8fa;
+    border-radius: 3px;
+}
+
+.commentbody{
+    border: 1px solid;
+    border-color: white #d1d5da #d1d5da #d1d5da;
+    height: 100px;
+    padding: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: -2px;
+}
+
+.comments:after {
+    content: '';
+    border-left: 2px solid #d1d5da;
+    position: relative;
+    left: 15px;
+}   
+
+.commentform{
+    padding-left: 70px;
+    width: 70%;
+} 
+
+.commentform > div {
+    overflow: hidden;
+    padding:10px;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+}
+
+.line{
+    border-bottom: 2px solid #d1d5da;
+    margin-bottom: 15px;
+    margin-top: -2px;
+    width: 70%;
+}
+
+
+
 
 
 
